@@ -1,5 +1,5 @@
 //Konfigurasi Utama
-const webAppUrl = 'https://script.google.com/macros/s/AKfycbyIFJtLXk6FLd7USO-ke_NG9VV67Myd0oaNqHA5CfE-kadwEbhlZdFnxVpZeHH4ssEV/exec'; // Ganti dengan URL Deploy terbaru
+const webAppUrl = 'https://script.google.com/macros/s/AKfycbzjzeOU7T91FmF018l4WcOlvL1Lz_jRov29uqR070aixEsMx5szZ1t__RX5uP_5_FFN/exec'; // Ganti dengan URL Deploy terbaru
 const rfidInput = document.getElementById('rfid-input');
 const statusBox = document.getElementById('status-box');
 const loader = document.getElementById('loader');
