@@ -107,5 +107,5 @@ rfidInput.addEventListener('keypress', function (e) {
 });
 
 // Jalankan saat pertama kali web dibuka
-setInterval(loadAttendance, 5000)
+setInterval(loadAttendance, 3000)
 loadAttendance();
