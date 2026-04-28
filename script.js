@@ -1,4 +1,4 @@
-// 1. Definisikan Konfigurasi Utama
+//Konfigurasi Utama
 const webAppUrl = 'https://script.google.com/macros/s/AKfycbyIFJtLXk6FLd7USO-ke_NG9VV67Myd0oaNqHA5CfE-kadwEbhlZdFnxVpZeHH4ssEV/exec'; // Ganti dengan URL Deploy terbaru
 const rfidInput = document.getElementById('rfid-input');
 const statusBox = document.getElementById('status-box');
@@ -14,8 +14,8 @@ function updateClock() {
     document.getElementById('clock').innerText = `${hours}:${minutes}:${seconds}`;
 }
 setInterval(updateClock, 1000);
-updateClock(); // Jalankan langsung
-// 2. Fungsi untuk Memuat Tabel (Harus Didefinisikan!)
+updateClock(); // 
+// 2.  Memuat Tabel 
 async function loadAttendance() {
     try {
         const response = await fetch(webAppUrl + '?action=read');
@@ -46,7 +46,7 @@ async function prosesAbsensi(idKartu) {
     loader.style.display = 'block';
     statusBox.style.display = 'none';
     
-    // Gunakan metode GET agar notifikasi bisa terbaca (bypass CORS)
+    // 
     const urlApi = `${webAppUrl}?nomor_kartu=${idKartu}&action=absensi`;
 
     try {
@@ -61,7 +61,7 @@ async function prosesAbsensi(idKartu) {
             tampilkanStatus(result.pesan, 'error');   // Notif "Data Tidak Valid"
         }
         
-        // Panggil fungsi tabel (Sekarang sudah didefinisikan di atas)
+        // 
         loadAttendance();
 
     } catch (error) {
