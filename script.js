@@ -90,7 +90,7 @@ function tampilkanStatus(pesan, tipe) {
     
     setTimeout(() => {
         statusBox.style.display = 'none';
-    }, 4000);
+    }, 6000);
 }
 
 // 5. Event Listeners & Inisialisasi
