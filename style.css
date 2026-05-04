@@ -69,3 +69,11 @@ footer {
     padding: 15px 0;
     border-top: 3px solid #004085;
 }
+@media (max-width: 576px) {
+    .table {
+        font-size: 0.85rem;
+    }
+    #clock {
+        font-size: 1.5rem; /* Kecilkan sedikit jam di mobile */
+    }
+}
